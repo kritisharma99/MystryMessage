@@ -1,0 +1,16 @@
+import dbConnect from "@/lib/dbConnect";
+import UserModel from "@/models/userModel";
+import bcrypt from "bcryptjs";
+import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
+
+
+//API: 
+export async function POST(requ){
+    await dbConnect();
+    try{
+
+    }
+    catch(error){
+        console.log("Sign up failed:",error)
+    }
+} 
